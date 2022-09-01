@@ -1,0 +1,36 @@
+# vsim work.system_top_tb 
+# Loading work.system_top_tb
+# Loading work.system_top
+# Loading work.SYS_CTRL
+# Loading work.CTRL_RX
+# Loading work.CTRL_TX
+# Loading work.RegFile
+# Loading work.ALU
+# Loading work.UART_TOP
+# Loading work.UART_TX
+# Loading work.Tx_FSM
+# Loading work.mux
+# Loading work.Serializer
+# Loading work.parity_calc
+# Loading work.UART_Rx
+# Loading work.FSM
+# Loading work.data_sampling
+# Loading work.edge_bit_counter
+# Loading work.deserializer
+# Loading work.parity_check
+# Loading work.strt_check
+# Loading work.stop_check
+# Loading work.clock_divider
+# Loading work.CLK_GATE
+# Loading work.data_synchronizer
+# Loading work.RST_synchronizer
+# Loading work.bit_synchronizer
+add wave -position insertpoint sim:/system_top_tb/DUT/U0_UART/RX_module/*
+add wave -position insertpoint sim:/system_top_tb/DUT/U0_Data_Sync_of_RX/*
+add wave -position insertpoint sim:/system_top_tb/DUT/U0_CTRL_TOP/*
+add wave -position insertpoint sim:/system_top_tb/DUT/UO_RegFile/*
+add wave -position insertpoint sim:/system_top_tb/DUT/U0_ALU/*
+add wave -position insertpoint sim:/system_top_tb/DUT/U0_Data_Sync_of_TX/*
+add wave -position insertpoint sim:/system_top_tb/DUT/U0_UART/TX_module/*
+run -all
+# Break in Module system_top_tb at system_top_tb.v line 57

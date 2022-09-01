@@ -1,0 +1,75 @@
+Loading db file '/home/IC/tsmc_fb_cl013g_sc/aci/sc-m/synopsys/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : system_top
+Version: K-2015.06
+Date   : Fri Sep  2 02:36:15 2022
+****************************************
+
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/tsmc_fb_cl013g_sc/aci/sc-m/synopsys/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+system_top                             4.69e-03    0.159 1.07e+07    0.174 100.0
+  U0_bit_synchronizer (bit_synchronizer)
+                                          0.000 2.19e-03 3.09e+04 2.22e-03   1.3
+  U0_SYNC_RST_REF_CLK (RST_synchronizer_1)
+                                       1.66e-05 3.41e-03 3.78e+04 3.47e-03   2.0
+  U0_SYNC_RST_UART_CLK (RST_synchronizer_0)
+                                       2.89e-06 1.11e-04 3.38e+04 1.47e-04   0.1
+  U0_Data_Sync_of_TX (data_synchronizer_1)
+                                          0.000 3.40e-05 1.53e+05 1.87e-04   0.1
+  U0_Data_Sync_of_RX (data_synchronizer_0)
+                                          0.000 8.75e-03 1.72e+05 8.92e-03   5.1
+  U0_CLK_GATE (CLK_GATE)               1.51e-03 4.67e-03 3.71e+04 6.23e-03   3.6
+  U0_clock_divider (clock_divider)     2.15e-05 1.36e-04 2.44e+05 4.01e-04   0.2
+  U0_UART (UART_TOP)                   1.56e-04 6.13e-04 1.71e+06 2.48e-03   1.4
+    RX_module (UART_Rx)                1.17e-04 5.64e-04 1.26e+06 1.94e-03   1.1
+      U0_stop_check (stop_check)          0.000    0.000 4.49e+03 4.49e-06   0.0
+      U0_strt_check (strt_check)          0.000    0.000 2.78e+03 2.78e-06   0.0
+      U0_parity_check (parity_check)      0.000 1.30e-04 1.85e+05 3.15e-04   0.2
+      U0_deserializer (deserializer)      0.000 1.16e-04 1.26e+05 2.42e-04   0.1
+      U0_edge_bit_counter (edge_bit_counter)
+                                       9.49e-07 1.33e-04 3.22e+05 4.56e-04   0.3
+      U0_data_sampling (data_sampling) 1.28e-05 4.96e-05 3.07e+05 3.70e-04   0.2
+      U0_FSM (FSM)                     2.55e-05 1.30e-04 3.04e+05 4.60e-04   0.3
+    TX_module (UART_TX)                   0.000 4.43e-05 4.51e+05 4.95e-04   0.3
+      Parity_Calc_Module (parity_calc)    0.000 1.84e-06 1.14e+05 1.16e-04   0.1
+      serializer_Module (Serializer)      0.000 3.12e-05 2.14e+05 2.45e-04   0.1
+      MUX_Module (mux)                    0.000    0.000 3.07e+04 3.07e-05   0.0
+      FSM_Module (Tx_FSM)                 0.000 1.13e-05 9.24e+04 1.04e-04   0.1
+  U0_ALU (ALU)                            0.000 1.24e-02 4.20e+06 1.66e-02   9.5
+    mult_49 (ALU_DW02_mult_0)             0.000    0.000 1.65e+06 1.65e-03   0.9
+    add_43 (ALU_DW01_add_0)               0.000    0.000 2.05e+05 2.05e-04   0.1
+    sub_46 (ALU_DW01_sub_0)               0.000    0.000 2.48e+05 2.48e-04   0.1
+    div_52 (ALU_DW_div_uns_0)             0.000    0.000 1.24e+06 1.24e-03   0.7
+  UO_RegFile (RegFile)                 1.93e-03    0.100 3.16e+06    0.105  60.6
+  U0_CTRL_TOP (SYS_CTRL)               5.02e-04 2.59e-02 8.78e+05 2.72e-02  15.7
+    U0_CTRL_TX (CTRL_TX)                  0.000 2.19e-03 1.69e+05 2.36e-03   1.4
+    U0_CTRL_RX (CTRL_RX)               2.32e-04 2.36e-02 7.00e+05 2.46e-02  14.1
+1
